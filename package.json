@@ -1,0 +1,13 @@
+{
+    "name": "cam-and-jojos-wedding",
+    "private": true,
+    "repository": "https://github.com/camswords/cam-and-jojos-wedding",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "*",
+        "jade": "*"
+    },
+    "scripts": {
+        "start": "node src/server.js"
+    }
+}
