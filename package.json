@@ -13,7 +13,8 @@
         "gulp-plumber": "*",
         "nib": "*",
         "require-dir": "*",
-        "gulp": "*"
+        "gulp": "*",
+        "gulp-nodemon": "*"
     },
     "scripts": {
         "start": "node src/server.js"
