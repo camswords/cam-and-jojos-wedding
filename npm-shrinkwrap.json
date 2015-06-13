@@ -217,6 +217,11 @@
         }
       }
     },
+    "extend": {
+      "version": "2.0.1",
+      "from": "extend@*",
+      "resolved": "https://registry.npmjs.org/extend/-/extend-2.0.1.tgz"
+    },
     "jade": {
       "version": "1.10.0",
       "from": "jade@*",
