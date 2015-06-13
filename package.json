@@ -17,6 +17,7 @@
         "gulp-nodemon": "*"
     },
     "scripts": {
-        "start": "node src/server.js"
+        "start": "node src/server.js",
+        "postinstall": "gulp styles"
     }
 }
