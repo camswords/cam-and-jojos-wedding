@@ -11,9 +11,7 @@ module.exports = function(overrides) {
     return function() {
         var options = extend({}, { continueOnError: false }, overrides);
 
-        var vendorScripts = [
-            './vendor/jquery-1.11.3/jquery-1.11.3.min.js',
-            './vendor/fullPage.js-master/jquery.fullPage.js'];
+        var vendorScripts = [];
 
         var vendor = gulp.src(vendorScripts)
             .pipe(concat('vendor-scripts.js'));

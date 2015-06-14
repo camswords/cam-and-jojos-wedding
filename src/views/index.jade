@@ -8,4 +8,15 @@ html
         script(src='#{path.toJavascript()}', async)
 
     body
-        img.save-the-date(src="http://res.cloudinary.com/df4mulofv/image/upload/w_1000/c_crop,x_0,y_416,w_1000,h_1100/cam-n-jojo-save-the-date_cft5ct.jpg")
+
+        ul#menu
+            li(data-menuanchor="first-page")
+                a(href="#first-page") First section
+            li(data-menuanchor="second-page")
+                a(href="#second-page") Second section
+        
+        #fullpage
+            .section
+                img.save-the-date(src="http://res.cloudinary.com/df4mulofv/image/upload/w_1000/c_crop,x_0,y_416,w_1000,h_1100/cam-n-jojo-save-the-date_cft5ct.jpg")
+            .section
+                |Woot another section!

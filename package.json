@@ -17,7 +17,9 @@
         "gulp-nodemon": "*",
         "streamqueue": "*",
         "gulp-uglify": "*",
-        "gulp-browserify": "*"
+        "gulp-browserify": "*",
+        "jquery": "*",
+        "fullpage.js": "*"
     },
     "scripts": {
         "start": "node src/server.js",
