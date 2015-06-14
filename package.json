@@ -14,7 +14,8 @@
         "nib": "*",
         "require-dir": "*",
         "gulp": "*",
-        "gulp-nodemon": "*"
+        "gulp-nodemon": "*",
+        "streamqueue": "*"
     },
     "scripts": {
         "start": "node src/server.js",

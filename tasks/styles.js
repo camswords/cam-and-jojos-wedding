@@ -5,12 +5,16 @@ var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
 var nib = require('nib');
 var extend = require('extend');
+var streamqueue = require('streamqueue');
 
 module.exports = function(overrides) {
     return function() {
         var options = extend({}, { continueOnError: false }, overrides);
 
-        gulp.src(['assets/css/styles.styl'])
+        var vendor = gulp.src(['vendor/fullPage.js-master/jquery.fullPage.css'])
+            .pipe(concat('vendor-styles.css'));
+        
+        var application = gulp.src(['assets/css/styles.styl'])
             .pipe(gulpif(options.continueOnError, plumber({
                 handleError: function(error) {
                     console.log('error:', error);
@@ -20,11 +24,12 @@ module.exports = function(overrides) {
             .pipe(stylus({
                 compress: true,
                 "include css": true,
-                include: 'vendor/css',
                 use: [nib()]
             }))
+            .pipe(concat('styles.css'));
+
+        return streamqueue({ objectMode: true }, vendor, application)
             .pipe(concat('styles.css'))
             .pipe(gulp.dest('public/css'));
-
     };
 };
