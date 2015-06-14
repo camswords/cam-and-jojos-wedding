@@ -30,6 +30,6 @@ module.exports = function(overrides) {
 
         return streamqueue({ objectMode: true }, vendor, application)
             .pipe(concat('styles.css'))
-            .pipe(gulp.dest('public/css'));
+            .pipe(gulp.dest('public'));
     };
 };

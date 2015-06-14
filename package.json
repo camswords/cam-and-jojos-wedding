@@ -15,10 +15,12 @@
         "require-dir": "*",
         "gulp": "*",
         "gulp-nodemon": "*",
-        "streamqueue": "*"
+        "streamqueue": "*",
+        "gulp-uglify": "*",
+        "gulp-browserify": "*"
     },
     "scripts": {
         "start": "node src/server.js",
-        "postinstall": "gulp styles"
+        "postinstall": "gulp styles && gulp scripts"
     }
 }
