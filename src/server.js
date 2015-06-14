@@ -1,20 +1,27 @@
 var express = require('express');
 var config = require('./config');
 var path = require('path');
+var database = require('./infrastructure/database');
 
-var webServer = express();
+database.connected().then(function() {
 
-webServer.use(express.static(path.join(process.cwd(), 'public')));
+    var webServer = express();
 
-webServer.set('views', __dirname + '/views');
-webServer.set('view engine', 'jade');
+    webServer.use(express.static(path.join(process.cwd(), 'public')));
 
-webServer.use(require('./controllers/request-helpers'));
+    webServer.set('views', __dirname + '/views');
+    webServer.set('view engine', 'jade');
 
-webServer.use(function(request, response) { 
-    response.render('index'); 
-});
+    webServer.use(require('./controllers/request-helpers'));
 
-webServer.listen(config.port(), function() {
-    console.log('started cam-and-jojos-wedding on port ' + config.port() + '. Using configuration for ' + config.environment() + '.');
-});
+    webServer.use(function(request, response) {
+        response.render('index');
+    });
+
+    webServer.listen(config.port(), function() {
+        console.log('started cam-and-jojos-wedding on port ' + config.port() + '. Using configuration for ' + config.environment() + '.');
+    });
+
+}).catch(function(error) {
+    console.log('failed to start server due to', error);
+}).done();

@@ -19,7 +19,9 @@
         "gulp-uglify": "*",
         "gulp-browserify": "*",
         "jquery": "*",
-        "fullpage.js": "*"
+        "fullpage.js": "*",
+        "bluebird": "*",
+        "mongoose": "*"
     },
     "scripts": {
         "start": "node src/server.js",
