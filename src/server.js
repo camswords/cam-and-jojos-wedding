@@ -2,11 +2,12 @@ var express = require('express');
 var config = require('./config');
 var path = require('path');
 var database = require('./infrastructure/database');
+var routes = require('./routes');
 
 database.connected().then(function() {
 
     var webServer = express();
-
+    
     webServer.use(express.static(path.join(process.cwd(), 'public')));
 
     webServer.set('views', __dirname + '/views');
@@ -14,9 +15,8 @@ database.connected().then(function() {
 
     webServer.use(require('./controllers/request-helpers'));
 
-    webServer.use(function(request, response) {
-        response.render('index');
-    });
+    webServer.use('/', routes(express.Router()));
+    webServer.use(function(request, response) { response.status(404).send('Not Found'); });
 
     webServer.listen(config.port(), function() {
         console.log('started cam-and-jojos-wedding on port ' + config.port() + '. Using configuration for ' + config.environment() + '.');
