@@ -21,14 +21,14 @@ html
             .section
                 .rsvp
                     h1 Rsvp
-                    form.rsvp-form.dynamic-module(data-name="submit-rsvp")
+                    form.rsvp-form.dynamic-module(data-name="submit-rsvp", data-base-url="#{config.url()}")
                         .form-section
                             label(for='who') Name
                             input(name="who", type="text")
                         .form-section
-                            label(for='we-are-coming') Coming?
-                            input(name="we-are-coming", type="radio", value="No")
-                            input(name="we-are-coming", type="radio", value="Yes")
+                            label(for='coming') Coming?
+                            input(name="coming", type="radio", value="No")
+                            input(name="coming", type="radio", value="Yes")
                         .form-section
                             label(for='message') Message
                             textarea(name="message")
