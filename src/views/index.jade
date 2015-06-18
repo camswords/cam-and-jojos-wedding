@@ -12,11 +12,19 @@ html
         ul#menu
             li(data-menuanchor="first-page")
                 a(href="#first-page") First section
-            li(data-menuanchor="second-page")
-                a(href="#second-page") Second section
+            li(data-menuanchor="rsvp-section")
+                a(href="#rsvp-section") Rsvp
         
         #fullpage
             .section
                 img.save-the-date(src="http://res.cloudinary.com/df4mulofv/image/upload/w_1000/c_crop,x_0,y_416,w_1000,h_1100/cam-n-jojo-save-the-date_cft5ct.jpg")
             .section
-                |Woot another section!
+                h1 Rsvp
+                form#rsvp-form
+                    label(for='who') Who
+                    input(name="who", type="text")
+                    label(for='') We are coming
+                    input(name="we-are-coming", type="radio", value="No")
+                    input(name="we-are-coming", type="radio", value="Yes")
+                    textarea(name="")
+                

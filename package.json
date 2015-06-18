@@ -22,7 +22,8 @@
         "fullpage.js": "*",
         "bluebird": "*",
         "mongoose": "*",
-        "mongoose-timestamp": "*"
+        "mongoose-timestamp": "*",
+        "lodash": "*"
     },
     "scripts": {
         "start": "node src/server.js",

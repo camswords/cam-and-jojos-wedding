@@ -4558,6 +4558,11 @@
       "from": "jquery@*",
       "resolved": "https://registry.npmjs.org/jquery/-/jquery-2.1.4.tgz"
     },
+    "lodash": {
+      "version": "3.9.3",
+      "from": "lodash@*",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.9.3.tgz"
+    },
     "mongoose": {
       "version": "4.0.5",
       "from": "mongoose@*",
