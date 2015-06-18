@@ -8,6 +8,6 @@ module.exports = {
         });
     },
     close: function() {
-        mongoose.disconnectAsync();
+        return mongoose.disconnectAsync();
     }
 };

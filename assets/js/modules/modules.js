@@ -6,22 +6,24 @@ var registeredModules = {
     'submit-rsvp': require('./submit-rsvp')
 };
 
-module.exports = function(modules) {
-    _.each(modules, function(module) {
-        var data = $(module).data();
-        data.module = $(module);
-        data.moduleDomElement = module;
+module.exports = {
+    execute: function (modules) {
+        _.each(modules, function (module) {
+            var data = $(module).data();
+            data.$module = $(module);
+            data.moduleDomElement = module;
 
-        if (!data || !data.name) {
-            console.log('modules: failed to find module-name on element', module);
-            return;
-        }
+            if (!data || !data.name) {
+                console.log('modules: failed to find module-name on element', module);
+                return;
+            }
 
-        if (!registeredModules[data.name]) {
-            console.log('modules: failed to find module with name', data.name, ', will not execute module.');
-            return;
-        }
+            if (!registeredModules[data.name]) {
+                console.log('modules: failed to find module with name', data.name, ', will not execute module.');
+                return;
+            }
 
-        registeredModules[data.name](data);
-    });
+            registeredModules[data.name](data);
+        });
+    }
 };
