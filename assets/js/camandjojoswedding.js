@@ -10,7 +10,7 @@ $(document).ready(function() {
     modules.execute($('.dynamic-module'));
     
     $('#fullpage').fullpage({
-        anchors: ['first-page', 'second-page'],
+        anchors: ['welcome-section', 'rsvp-section'],
         menu: '#menu'
     });
 
