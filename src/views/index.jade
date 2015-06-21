@@ -19,9 +19,13 @@ html
             .section
                 img.save-the-date(src="http://res.cloudinary.com/df4mulofv/image/upload/w_1000/c_crop,x_0,y_416,w_1000,h_1100/cam-n-jojo-save-the-date_cft5ct.jpg")
             .section
-                .rsvp
+                .rsvp.dynamic-module(data-name="submit-rsvp", data-base-url="#{config.url()}")
                     h1 Rsvp
-                    form.rsvp-form.dynamic-module(data-name="submit-rsvp", data-base-url="#{config.url()}")
+                    .coming-message
+                        | Hurruh! We're so glad you can be with us on the day. Thanks for letting us know.
+                    .not-coming-message
+                        | We're sorry you can't come! Thanks for letting us know.
+                    form.rsvp-form
                         .form-section
                             label(for='who') Name
                             input(name="who", type="text")

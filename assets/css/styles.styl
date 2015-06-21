@@ -42,8 +42,25 @@ body
     h1
       font-size 1rem
       
+    .coming-message, .not-coming-message
+      display none
+      
+    &.thank-you-for-your-rsvp-coming
+      .coming-message
+        display block
+      
+      .rsvp-form
+        display none
+        
+    &.thank-you-for-your-rsvp-not-coming
+      .not-coming-message
+        display block
+      
+      .rsvp-form
+        display none
+        
+        
     .rsvp-form
-    
       .form-section
         label
           width 100%

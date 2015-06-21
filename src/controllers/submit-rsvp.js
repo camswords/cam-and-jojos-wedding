@@ -4,7 +4,7 @@ module.exports = function(request, response) {
 
     var data = {
         who: request.body.who,
-        coming: request.body.coming === 'Yes',
+        coming: request.body.coming,
         message: request.body.message,
         email: request.body.email
     };
