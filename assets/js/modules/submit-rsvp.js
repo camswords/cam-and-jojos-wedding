@@ -12,7 +12,6 @@ module.exports = function(data) {
             email: data.$module.find("input[name='who']").val()
         };
         
-        
         weddingGateway.post(data.baseUrl + 'rsvp', dataToSend).then(function() {
 
             if (dataToSend.coming) {
