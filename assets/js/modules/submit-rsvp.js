@@ -7,10 +7,11 @@ module.exports = function(data) {
         
         var dataToSend = {
             who: data.$module.find("input[name='who']").val(),
-            coming: data.$module.find("input[name='coming']").val() === "Yes",
+            coming: data.$module.find("input[name='coming']:checked").val() === "Yes",
             message: data.$module.find("input[name='message']").text(),
             email: data.$module.find("input[name='who']").val()
         };
+        
         
         weddingGateway.post(data.baseUrl + 'rsvp', dataToSend).then(function() {
 
