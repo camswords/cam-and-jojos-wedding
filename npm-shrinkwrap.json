@@ -337,9 +337,9 @@
       "resolved": "https://registry.npmjs.org/extend/-/extend-2.0.1.tgz"
     },
     "fullpage.js": {
-      "version": "2.6.6",
+      "version": "2.6.6-2",
       "from": "fullpage.js@*",
-      "resolved": "https://registry.npmjs.org/fullpage.js/-/fullpage.js-2.6.6.tgz"
+      "resolved": "https://registry.npmjs.org/fullpage.js/-/fullpage.js-2.6.6-2.tgz"
     },
     "gulp": {
       "version": "3.9.0",
