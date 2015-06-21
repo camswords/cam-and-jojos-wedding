@@ -27,6 +27,7 @@ html
                         | We're sorry you can't come! Thanks for letting us know.
                     form.rsvp-form
                         .form-section
+                            .error-message.who-errors &nbsp;
                             label(for='who') Name
                             input(name="who", type="text")
                         .form-section
@@ -36,6 +37,10 @@ html
                         .form-section
                             label(for='message') Message
                             textarea(name="message")
+                        .form-section
+                            .error-message.email-errors &nbsp;
+                            label(for='email') Email
+                            input(name="email", type="text")
                         .form-section
                             a.submit-rsvp(href="#") Submit
                 
