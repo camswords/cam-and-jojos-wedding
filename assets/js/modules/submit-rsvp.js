@@ -5,14 +5,14 @@ module.exports = function(data) {
         event.stopPropagation();
         event.preventDefault();
         
-        var data = {
+        var dataToSend = {
             who: data.$module.find("input[name='who']").val(),
             coming: data.$module.find("input[name='coming']").val(),
             message: data.$module.find("input[name='message']").text(),
             email: data.$module.find("input[name='who']").val()
         };
         
-        weddingGateway.post(data.baseUrl + '/rsvp', data).then(function() {
+        weddingGateway.post(data.baseUrl + 'rsvp', dataToSend).then(function() {
             data.$module.addClass('thank-you-for-your-rsvp');
         });
     });

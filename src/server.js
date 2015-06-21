@@ -3,13 +3,14 @@ var config = require('./config');
 var path = require('path');
 var database = require('./infrastructure/database');
 var routes = require('./routes');
+var body = require('body-parser');
 
 database.connected().then(function() {
 
     var webServer = express();
     
     webServer.use(express.static(path.join(process.cwd(), 'public')));
-
+    webServer.use(body.json());
     webServer.set('views', __dirname + '/views');
     webServer.set('view engine', 'jade');
 

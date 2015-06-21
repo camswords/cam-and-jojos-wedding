@@ -9,4 +9,8 @@ var RsvpSchema = new Schema({
     message: { type: String }
 }).plugin(timestamps);
 
-module.exports = mongoose.model('Rsvp', RsvpSchema);
+var Rsvp = mongoose.model('Rsvp', RsvpSchema);
+
+module.exports = {
+    saveReply: require('./rsvp/save-reply')(Rsvp)
+};
