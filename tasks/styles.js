@@ -10,9 +10,12 @@ var streamqueue = require('streamqueue');
 module.exports = function(overrides) {
     return function() {
         var options = extend({}, { continueOnError: false }, overrides);
+        
+        gulp.src('vendor/semanticui/dist/themes/**/*').pipe(gulp.dest('public/themes'));
 
-        var vendor = gulp.src(['vendor/fullPage.js-master/jquery.fullPage.css'])
-            .pipe(concat('vendor-styles.css'));
+        var vendor = gulp.src(['vendor/fullPage.js-master/jquery.fullPage.css', 
+                               'vendor/semanticui/dist/semantic.min.css'])
+                         .pipe(concat('vendor-styles.css'));
         
         var application = gulp.src(['assets/css/styles.styl'])
             .pipe(gulpif(options.continueOnError, plumber({
