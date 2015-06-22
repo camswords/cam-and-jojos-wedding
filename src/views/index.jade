@@ -11,36 +11,47 @@ html
 
         ul#menu
             li(data-menuanchor="welcome-section")
-                a(href="#welcome-section") Welcome
+                a.ui.button(href="#welcome-section") Welcome
             li(data-menuanchor="rsvp-section")
-                a(href="#rsvp-section") Rsvp
+                a.ui.button(href="#rsvp-section") Rsvp
         
         #fullpage
             .section
                 img.save-the-date(src="http://res.cloudinary.com/df4mulofv/image/upload/w_1000/c_crop,x_0,y_416,w_1000,h_1100/cam-n-jojo-save-the-date_cft5ct.jpg")
             .section
                 .rsvp.dynamic-module(data-name="submit-rsvp", data-base-url="#{config.url()}")
-                    h1 Rsvp
                     .coming-message
                         | Hurruh! We're so glad you can be with us on the day. Thanks for letting us know.
                     .not-coming-message
                         | We're sorry you can't come! Thanks for letting us know.
-                    form.rsvp-form
-                        .form-section
-                            .error-message.who-errors &nbsp;
-                            label(for='who') Name
-                            input(name="who", type="text")
-                        .form-section
-                            label(for='coming') Coming?
-                            input(name="coming", type="radio", value="No")
-                            input(name="coming", type="radio", value="Yes")
-                        .form-section
-                            label(for='message') Message
+                    form.ui.form.rsvp-form
+                        h4.ui.dividing.header RSVP
+                        .required.field
+                            label Name
+                            .ui.icon.input
+                                input(name="who", type="text")
+                                i.user.icon
+                        .required.field
+                            label Email
+                            p All correspondence will go via this email, including your wedding invitation.
+                            .ui.icon.input
+                                input(name="email", type="text")
+                                i.at.icon
+                        .grouped.required.fields.foobar
+                            label(for="alone") Are you coming?
+                            .field
+                                .ui.radio.checkbox.checked
+                                    input(id="yes-coming-input" name="coming", checked="", type="radio", value="Yes")
+                                    label.yes-coming Yes
+                            .field
+                                .ui.radio.checkbox
+                                    input(id="no-coming-input", name="coming", type="radio", value="No")
+                                    label.no-coming  No
+                        .field
+                            label Message
                             textarea(name="message")
-                        .form-section
-                            .error-message.email-errors &nbsp;
-                            label(for='email') Email
-                            input(name="email", type="text")
-                        .form-section
-                            a.submit-rsvp(href="#") Submit
-                
+                        
+                        .ui.error.message.error-messages
+
+                        .ui.submit.button.submit-rsvp Save
+
