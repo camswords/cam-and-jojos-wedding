@@ -16,10 +16,13 @@ html
                 a.ui.blue.basic.button(href="#rsvp-section")
                     i.icon.envelope
                     | RSVP
+        
+        #footer
     
         #fullpage
             .section#section-welcome
-                img.save-the-date(src="http://res.cloudinary.com/df4mulofv/image/upload/w_1000/c_crop,x_0,y_416,w_1000,h_1100/cam-n-jojo-save-the-date_cft5ct.jpg")
+                .save-the-date
+                    img(src="http://res.cloudinary.com/df4mulofv/image/upload/w_1000/c_crop,x_0,y_416,w_1000,h_1100/cam-n-jojo-save-the-date_cft5ct.jpg")
             
             .section
                 .rsvp.dynamic-module(data-name="submit-rsvp", data-base-url="#{config.url()}")
