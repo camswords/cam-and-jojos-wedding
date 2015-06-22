@@ -8,7 +8,6 @@ html
         script(src='#{path.toJavascript()}', async)
 
     body
-
         ul#menu
             li(data-menuanchor="welcome-section")
                 a.ui.blue.basic.button(href="#welcome-section")
@@ -17,10 +16,11 @@ html
                 a.ui.blue.basic.button(href="#rsvp-section")
                     i.icon.envelope
                     | RSVP
-        
+    
         #fullpage
-            .section
+            .section#section-welcome
                 img.save-the-date(src="http://res.cloudinary.com/df4mulofv/image/upload/w_1000/c_crop,x_0,y_416,w_1000,h_1100/cam-n-jojo-save-the-date_cft5ct.jpg")
+            
             .section
                 .rsvp.dynamic-module(data-name="submit-rsvp", data-base-url="#{config.url()}")
                     h4.ui.dividing.header
@@ -32,13 +32,13 @@ html
                         .content
                             .header Thank you
                             p Hurruh! We're so glad you can be with us on the day. Thanks for letting us know.
-
+    
                     .ui.info.icon.message.not-coming-message
                         i.frown.icon
                         .content
                             .header Thank you
                             p We're sorry you can't come! Thanks for letting us know.
-
+    
                     form.ui.form.rsvp-form
                         
                         .required.field
@@ -67,6 +67,10 @@ html
                             textarea(name="message")
                         
                         .ui.error.message.error-messages
-
+    
                         .ui.submit.button.submit-rsvp Save
+
+
+            .section
+                | Another section of just text!
 
