@@ -5,5 +5,6 @@ module.exports = {
     url: function() { return 'http://camnjojoswedding.herokuapp.com/'; },
     mongodb: {
         url: function() { return process.env.MONGODB_URL; }
-    }
+    },
+    minifyJavascript: function() { return true; }
 };

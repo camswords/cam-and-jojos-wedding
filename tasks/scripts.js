@@ -6,12 +6,13 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
 var extend = require('extend');
+var config = require('../src/config');
 
 module.exports = function(overrides) {
     return function() {
         var options = extend({}, { continueOnError: false }, overrides);
 
-        var vendorScripts = [];
+        var vendorScripts = ['./vendor/semanticui/dist/semantic.min.js'];
 
         var vendor = gulp.src(vendorScripts)
             .pipe(concat('vendor-scripts.js'));
@@ -24,7 +25,7 @@ module.exports = function(overrides) {
                 }
             })))
             .pipe(browserify({ noParse: ['jquery'] }))
-            .pipe(uglify())
+            .pipe(gulpif(config.minifyJavascript(), uglify()))
             .pipe(concat('minified-scripts.js'));
 
 
