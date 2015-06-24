@@ -10,6 +10,7 @@ body
   
   img
     width 100%
+    display block
   
   #footer
     position fixed
@@ -39,27 +40,30 @@ body
         text-decoration none
 
   #section-welcome
-    background url('http://res.cloudinary.com/df4mulofv/image/upload/c_crop,x_10,y_10,w_740,h_490/w_1000/chateau-cazenac-france-wedding_0013_o5ggzy.jpg')
+    background url('http://res.cloudinary.com/df4mulofv/image/upload/c_crop,x_10,y_10,w_680,h_490/w_1000,e_grayscale/chateau-cazenac-france-wedding_0013_o5ggzy.jpg')
     background-repeat no-repeat
     background-size 100%
     position relative
     
     .save-the-date
-      width 35%
+      width 50%
+      max-width 321px
       position absolute
       top 50%
       left 50%
       transform translate(-50%, -50%)
-      padding 0.3rem 0.3rem 0 0.3rem
+      padding 10px 10px 50px 10px
       background-color white
+      -webkit-box-shadow 0 3px 6px rgba(0,0,0,.25)
       
       img
-        border 2px solid #333
+        border 1px solid black
       
     
   .rsvp
     width 50%
     margin 0 auto
+    padding-top 3rem
       
     .ui.info.message.coming-message, .ui.info.message.not-coming-message
       display none
