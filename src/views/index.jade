@@ -11,11 +11,16 @@ html
         ul#menu
             li(data-menuanchor="welcome-section")
                 a.ui.blue.inverted.button(href="#welcome-section")
+                    i.icon.star
                     | Welcome
             li(data-menuanchor="rsvp-section")
                 a.ui.blue.inverted.button(href="#rsvp-section")
                     i.icon.envelope
                     | RSVP
+            li(data-menuanchor="agenda-section")
+                a.ui.blue.inverted.button(href="#agenda-section")
+                    i.icon.calendar
+                    | Agenda
         
         #footer
     
@@ -36,7 +41,7 @@ html
                     .supporting-text Chateau de Cazenac, Dordogne France
                     .wedding-date 28th May 2016
 
-            .section
+            .section#section-rsvp
                 .rsvp.dynamic-module(data-name="submit-rsvp", data-base-url="#{config.url()}")
                     h4.ui.dividing.header
                         i.icon.envelope(style="padding-top: 0; font-size: 1em;")
@@ -84,8 +89,24 @@ html
                         .ui.error.message.error-messages
     
                         .ui.submit.button.submit-rsvp Save
-
-
-            .section
-                | Another section of just text!
+    
+            .section#section-agenda
+                .agenda
+                    h2
+                        i.icon.calendar
+                        | Agenda
+                    
+                    .day
+                        .day-name Thu 26th
+                        .day-activity hen / stag
+                    .day
+                        .day-name Fri 27th
+                        .day-activity relaxing
+                    .day
+                        .day-name Sat 28th
+                        .day-activity wedding
+                    .day
+                        .day-name Sun 29th
+                        .day-activity bbq
+                                
 
