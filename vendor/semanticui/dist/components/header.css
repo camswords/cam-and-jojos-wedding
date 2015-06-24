@@ -275,10 +275,10 @@ a.ui.black.header:hover {
   color: #1b1c1d !important;
 }
 .ui.blue.header {
-  color: #3b83c0 !important;
+  color: #dfba69 !important;
 }
 a.ui.blue.header:hover {
-  color: #458ac6 !important;
+  color: #e2c076 !important;
 }
 .ui.green.header {
   color: #5bbd72 !important;
@@ -326,7 +326,7 @@ a.ui.yellow.header:hover {
   border-bottom: 2px solid #1b1c1d;
 }
 .ui.blue.dividing.header {
-  border-bottom: 2px solid #3b83c0;
+  border-bottom: 2px solid #dfba69;
 }
 .ui.green.dividing.header {
   border-bottom: 2px solid #5bbd72;
@@ -382,10 +382,10 @@ a.ui.inverted.black.header:hover {
   color: #b2b2b2 !important;
 }
 .ui.inverted.blue.header {
-  color: #54c8ff !important;
+  color: #dfba69 !important;
 }
 a.ui.inverted.blue.header:hover {
-  color: #63cdff !important;
+  color: #e2c076 !important;
 }
 .ui.inverted.green.header {
   color: #2ecc40 !important;
