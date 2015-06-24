@@ -14,6 +14,7 @@ bicycle-tyres = #3E4147
 
 heading-color = death2
 heading-shadow = 1px 1px 2px sunrise-glow
+heart-edge-gap = 5px
 
 *
   box-sizing: border-box;
@@ -68,25 +69,64 @@ body
       font-size 9rem
       font-family euphoria
       text-align center
-      text-shadow heading-shadow
+      text-shadow heading-shadow, 1px 1px 10px glowing-eiffel-tower
       
-    .supporting-text
-      color heading-color
-      font-weight bold
-      padding 0.5rem
-      font-size 4rem
-      font-family euphoria
-      text-align center
-      text-shadow heading-shadow
-          
-    .wedding-date
-      color heading-color
-      font-weight bold
-      padding 0.5rem
-      font-size 6rem
-      font-family euphoria
-      text-align center
-      text-shadow heading-shadow 
+    .card
+      position relative
+      padding 1rem
+      background-color glowing-eiffel-tower
+      box-shadow 6px 6px 5px 0px rgba(42,44,49,0.43)
+      width 50%
+      margin 0 auto
+      border-radius 4px
+      border 1px solid death2
+      background: rgba(255,254,223,1);
+      background: -moz-linear-gradient(-45deg, rgba(255,254,223,1) 0%, rgba(223,186,105,1) 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,254,223,1)), color-stop(100%, rgba(223,186,105,1)));
+      background: -webkit-linear-gradient(-45deg, rgba(255,254,223,1) 0%, rgba(223,186,105,1) 100%);
+      background: -o-linear-gradient(-45deg, rgba(255,254,223,1) 0%, rgba(223,186,105,1) 100%);
+      background: -ms-linear-gradient(-45deg, rgba(255,254,223,1) 0%, rgba(223,186,105,1) 100%);
+      background: linear-gradient(135deg, rgba(255,254,223,1) 0%, rgba(223,186,105,1) 100%);
+      
+      
+      .top-left-heart
+        font-size 1rem
+        position absolute
+        left heart-edge-gap
+        top heart-edge-gap
+      .top-right-heart
+        font-size 1rem
+        position absolute
+        right heart-edge-gap
+        top heart-edge-gap
+      .bottom-left-heart
+        font-size 1rem
+        position absolute
+        left heart-edge-gap
+        bottom heart-edge-gap
+      .bottom-right-heart
+        font-size 1rem
+        position absolute
+        right heart-edge-gap
+        bottom heart-edge-gap
+
+      .supporting-text
+        color heading-color
+        font-weight bold
+        padding 0.5rem
+        font-size 4rem
+        font-family euphoria
+        text-align center
+        text-shadow heading-shadow
+            
+      .wedding-date
+        color heading-color
+        font-weight bold
+        padding 0.5rem
+        font-size 6rem
+        font-family euphoria
+        text-align center
+        text-shadow heading-shadow 
       
   .rsvp
     width 50%
