@@ -13,7 +13,7 @@ $(document).ready(function() {
     modules.execute($('.dynamic-module'));
     
     $('#fullpage').fullpage({
-        anchors: ['welcome-section', 'rsvp-section', 'agenda-section'],
+        anchors: ['welcome-section', 'rsvp-section', 'agenda-section', 'kids-section'],
         menu: '#menu'
     });
 
