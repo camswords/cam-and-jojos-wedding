@@ -29,7 +29,7 @@ heading-color = death2
 heading-shadow = 1px 1px 2px sunrise-glow
 heart-edge-gap = 5px
 
-calendar-font-colour = #ebebeb
+calendar-font-colour = bicycle-tyres
 
 *
   box-sizing: border-box;
@@ -168,12 +168,26 @@ body
   #section-agenda
     background-color shallow-abyss
     position relative
-    
+
+    h1
+      color heading-color
+      font-weight bold
+      padding-top 5rem
+      font-size 9rem
+      font-family euphoria
+      text-align center
+      text-shadow 1px 1px 2px sunrise-glow, 1px 1px 10px glowing-eiffel-tower
+
+      i
+        font-size 0.8em
+
     .agenda
       text-align center
-      padding 1rem
+      padding 2rem 1rem
       position absolute
       background-color white
+      border-top 1px solid lighten(shallow-abyss, 20)
+      border-bottom 2px solid lighten(shallow-abyss, 20)
       left 50%
       top 50%
       transform translate(-50%, -50%)
@@ -181,12 +195,7 @@ body
       width 100%
       font-family museo-sans
       
-      i
-        font-size 0.8em
       
-      h2
-        text-align center
-
       .day
         position relative
         display inline-block
@@ -257,4 +266,30 @@ body
   
       .gifts-content
         font-size 1.3rem
+        
+  #section-accommodation
+    position relative
+      
+  #section-aboutus
+    position relative
+    background-color sunrise-glow
+
+    .aboutus
+      position absolute
+      background-color white
+      width 60%
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
+      padding 1rem
+      border-radius 4px
+      border 1px solid death2
+      box-shadow 6px 6px 5px 0px rgba(42,44,49,0.43)
+
+      h2
+        text-align center
+
+      .aboutus-content 
+        font-size 1.3rem
+    
         
