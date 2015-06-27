@@ -17,7 +17,7 @@ $(document).ready(function() {
         menu: '#menu'
     });
 
-    $('.slideout-menu-toggle').on('click', function(event) {
+    $('.menu-toggle').on('click', function(event) {
         event.preventDefault();
         
         var slideoutMenu = $('.slideout-menu');
@@ -27,8 +27,10 @@ $(document).ready(function() {
 
         if (slideoutMenu.hasClass("open")) {
             slideoutMenu.animate({ left: "0px" });
+            $('.menu-toggle').animate({ left: "250px" });
         } else {
             slideoutMenu.animate({ left: -slideoutMenuWidth }, 250);
+            $('.menu-toggle').animate({ left: "0px" }, 250);
         }
     });    
 });
