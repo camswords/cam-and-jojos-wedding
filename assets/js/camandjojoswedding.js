@@ -17,5 +17,18 @@ $(document).ready(function() {
         menu: '#menu'
     });
 
-    
+    $('.slideout-menu-toggle').on('click', function(event) {
+        event.preventDefault();
+        
+        var slideoutMenu = $('.slideout-menu');
+        var slideoutMenuWidth = $('.slideout-menu').width();
+
+        slideoutMenu.toggleClass("open");
+
+        if (slideoutMenu.hasClass("open")) {
+            slideoutMenu.animate({ left: "0px" });
+        } else {
+            slideoutMenu.animate({ left: -slideoutMenuWidth }, 250);
+        }
+    });    
 });

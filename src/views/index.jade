@@ -8,36 +8,45 @@ html
         script(src='#{path.toJavascript()}', async)
 
     body
-        ul#menu
-            li(data-menuanchor="welcome-section")
-                a.ui.blue.inverted.button(href="#welcome-section")
-                    i.icon.star
-                    | Welcome
-            li(data-menuanchor="rsvp-section")
-                a.ui.blue.inverted.button(href="#rsvp-section")
-                    i.icon.envelope
-                    | RSVP
-            li(data-menuanchor="agenda-section")
-                a.ui.blue.inverted.button(href="#agenda-section")
-                    i.icon.calendar
-                    | Agenda
-            li(data-menuanchor="kids-section")
-                a.ui.blue.inverted.button(href="#kids-section")
-                    i.icon.child
-                    | Kids
-            li(data-menuanchor="gifts-section")
-                a.ui.blue.inverted.button(href="#gifts-section")
-                    i.icon.gift
-                    | Gifts
-            li(data-menuanchor="accommodation-section")
-                a.ui.blue.inverted.button(href="#accommodation-section")
-                    i.icon.home
-                    | Accommodation
-            li(data-menuanchor="aboutus-section")
-                a.ui.blue.inverted.button(href="#aboutus-section")
-                    i.icon.heart
-                    | About us
         
+        #menu
+            .slideout-menu
+
+                ul.slideout-menu-items
+                    li(data-menuanchor="welcome-section")
+                        a(href="#welcome-section")
+                            i.icon.star
+                            | Welcome
+                    li(data-menuanchor="rsvp-section")
+                        a(href="#rsvp-section")
+                            i.icon.envelope
+                            | RSVP
+                    li(data-menuanchor="agenda-section")
+                        a(href="#agenda-section")
+                            i.icon.calendar
+                            | Agenda
+                    li(data-menuanchor="kids-section")
+                        a(href="#kids-section")
+                            i.icon.child
+                            | Kids
+                    li(data-menuanchor="gifts-section")
+                        a(href="#gifts-section")
+                            i.icon.gift
+                            | Gifts
+                    li(data-menuanchor="accommodation-section")
+                        a(href="#accommodation-section")
+                            i.icon.home
+                            | Accommodation
+                    li(data-menuanchor="aboutus-section")
+                        a(href="#aboutus-section")
+                            i.icon.heart
+                            | About us
+        
+        #header
+            h3
+                | Menu 
+                a(href="#", class="slideout-menu-toggle") ×
+
         #footer
     
         #fullpage

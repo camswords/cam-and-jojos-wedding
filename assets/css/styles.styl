@@ -31,6 +31,8 @@ heart-edge-gap = 5px
 
 calendar-font-colour = bicycle-tyres
 
+@import "menu"
+
 *
   box-sizing: border-box;
 
@@ -43,6 +45,16 @@ body
   img
     width 100%
     display block
+    
+  #header
+    position fixed
+    z-index 10
+    background-color death2
+    width 100%
+    top 0
+    left 0
+    margin 0
+    height 3rem
   
   #footer
     position fixed
@@ -52,24 +64,6 @@ body
     background-color death2
     width 100%
     height 3rem;
-    
-  ul#menu
-    position fixed
-    list-style-type none
-    z-index 10
-    background-color death2
-    width 100%
-    top 0
-    left 0
-    margin 0
-    padding 0.2rem 0
-    
-    li
-      margin 1rem
-      display inline
-      
-      a
-        text-decoration none
 
   #section-welcome
     background url('http://res.cloudinary.com/df4mulofv/image/upload/x_50,y_10,w_700,h_489,c_crop,e_grayscale/e_blur/cazenac-by-the-trees_ssb1l6.jpg')
