@@ -69,10 +69,10 @@ html
 
             .section#section-cant-come
                 .cant-come.dynamic-module(data-name="submit-cant-come", data-base-url="#{config.url()}")
-                    h4.ui.dividing.header
-                        i.icon.envelope(style="padding-top: 0; font-size: 1em;")
-                        .content Can't come?
-                    
+                    h1
+                        i.icon.envelope
+                        | Can't come?
+
                     .ui.info.icon.message.not-coming-message
                         i.frown.icon
                         .content
@@ -91,7 +91,7 @@ html
                         
                         .ui.error.message.error-messages
     
-                        .ui.submit.button.submit-cant-come Submit
+                        .ui.submit.primary.button.submit-cant-come Submit
     
             .section#section-agenda
                 h1

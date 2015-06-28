@@ -158,21 +158,49 @@ body
       
       .rsvp-form
         display none
+  
+  #section-cant-come
+    background-color shallow-abyss
+    position relative
+
+    .cant-come
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
+      font-size 1.3rem
+      width 60%
+      font-family museo-sans
+      padding 1rem
+      position absolute
+      background-color white
+      border-top 1px solid lighten(shallow-abyss, 20)
+      border-bottom 2px solid lighten(shallow-abyss, 20)
+      border-radius 4px
+  
+      h1
+        color heading-color
+        font-weight bold
+        font-size 9rem
+        font-family euphoria
+        text-align center
+        text-shadow 1px 1px 2px sunrise-glow, 1px 1px 10px glowing-eiffel-tower
+  
+      i
+        font-size 0.8em
         
-  .cant-come
-    width 50%
-    margin 0 auto
-    padding-top 3rem
-
-    .ui.info.message.not-coming-message
-      display none
-      
-    &.thank-you-for-your-rsvp-not-coming
+      textarea
+        height 100px
+  
+  
       .ui.info.message.not-coming-message
-        display block
-
-      .cant-come-form
         display none
+        
+      &.thank-you-for-your-rsvp-not-coming
+        .ui.info.message.not-coming-message
+          display block
+  
+        .cant-come-form
+          display none
 
   #section-agenda
     background-color shallow-abyss
