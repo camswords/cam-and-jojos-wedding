@@ -21,10 +21,6 @@ html
                         a(href="#welcome-section")
                             i.icon.star
                             | Welcome
-                    li(data-menuanchor="rsvp-section")
-                        a(href="#rsvp-section")
-                            i.icon.envelope
-                            | RSVP
                     li(data-menuanchor="cant-come-section")
                         a(href="#cant-come-section")
                             i.icon.envelope
@@ -70,55 +66,6 @@ html
                         | Le mariage de Cam et Jojo
                     .supporting-text Chateau de Cazenac, Dordogne France
                     .wedding-date 28th May 2016
-
-            .section#section-rsvp
-                .rsvp.dynamic-module(data-name="submit-rsvp", data-base-url="#{config.url()}")
-                    h4.ui.dividing.header
-                        i.icon.envelope(style="padding-top: 0; font-size: 1em;")
-                        .content RSVP
-
-                    .ui.info.icon.message.coming-message
-                        i.smile.outline.icon
-                        .content
-                            .header Thank you
-                            p Hurruh! We're so glad you can be with us on the day. Thanks for letting us know.
-
-                    .ui.info.icon.message.not-coming-message
-                        i.frown.icon
-                        .content
-                            .header Thank you
-                            p We're sorry you can't come! Thanks for letting us know.
-
-                    form.ui.form.rsvp-form
-
-                        .required.field
-                            label Name
-                            .ui.icon.input
-                                input(name="who", type="text")
-                                i.user.icon
-                        .required.field
-                            label Email
-                            p All correspondence will go via this email, including your wedding invitation.
-                            .ui.icon.input
-                                input(name="email", type="text")
-                                i.at.icon
-                        .grouped.required.fields.foobar
-                            label(for="alone") Are you coming?
-                            .field
-                                .ui.radio.checkbox.checked
-                                    input(id="yes-coming-input" name="coming", checked="", type="radio", value="Yes")
-                                    label.yes-coming Yes
-                            .field
-                                .ui.radio.checkbox
-                                    input(id="no-coming-input", name="coming", type="radio", value="No")
-                                    label.no-coming  No
-                        .field
-                            label Message
-                            textarea(name="message")
-
-                        .ui.error.message.error-messages
-
-                        .ui.submit.button.submit-rsvp Save
 
             .section#section-cant-come
                 .cant-come.dynamic-module(data-name="submit-cant-come", data-base-url="#{config.url()}")
