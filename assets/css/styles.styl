@@ -77,9 +77,25 @@ body
     i
       font-size 0.8em
       
-  .text-content
-    font-size 1.2rem
-    color #6e6e6e
+  .section
+    position relative
+
+    .section-content
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
+      width 60%
+      font-family museo-sans
+      padding 1rem
+      position absolute
+      background-color white
+      border-top 1px solid lighten(shallow-abyss, 20)
+      border-bottom 2px solid lighten(shallow-abyss, 20)
+      border-radius 4px
+      
+      .text-content
+        font-size 1.2rem
+        color #6e6e6e
 
   #section-welcome
     background url('http://res.cloudinary.com/df4mulofv/image/upload/x_50,y_10,w_700,h_489,c_crop,e_grayscale/e_blur/cazenac-by-the-trees_ssb1l6.jpg')
