@@ -20,17 +20,19 @@ $(document).ready(function() {
     $('.menu-toggle').on('click', function(event) {
         event.preventDefault();
         
+        var menuToggle = $('.menu-toggle');
         var slideoutMenu = $('.slideout-menu');
         var slideoutMenuWidth = $('.slideout-menu').width();
 
         slideoutMenu.toggleClass("open");
+        menuToggle.toggleClass("open");
 
         if (slideoutMenu.hasClass("open")) {
             slideoutMenu.animate({ left: "0px" });
-            $('.menu-toggle').animate({ left: "250px" });
+            menuToggle.animate({ left: "250px" });
         } else {
             slideoutMenu.animate({ left: -slideoutMenuWidth }, 250);
-            $('.menu-toggle').animate({ left: "0px" }, 250);
+            menuToggle.animate({ left: "0px" }, 250);
         }
     });    
 });
