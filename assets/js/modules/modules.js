@@ -4,7 +4,8 @@ var $ = require('jquery');
 
 var registeredModules = {
     'submit-rsvp': require('./submit-rsvp'),
-    'submit-cant-come': require('./submit-cant-come')
+    'submit-cant-come': require('./submit-cant-come'),
+    'google-map': require('./google-map')
 };
 
 module.exports = {
