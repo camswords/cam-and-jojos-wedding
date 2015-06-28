@@ -288,31 +288,45 @@ body
       border-right 1px solid lighten(shallow-abyss, 20)
 
   #section-accommodation
-    position relative
+    background-color white
+    
+    .accommodation
+      width 80%
+      padding 1rem
 
-    ul.accommodation-options
-      list-style-type none
-      
-      li
-        width 25%
-        display inline-block
+      ul.accommodation-options
+        list-style-type none
         
-        .map
-          width 150px
-          height 150px
-          overflow hidden
-          border 1px solid #e0e0e0
-          border-radius 50%
-          position relative
-          z-index 20
-          box-shadow 1px 1px 0 #e3e3e3
+        li
+          padding 0.7rem
+          width 20%
+          display inline-block
+          text-align center
           
-          iframe
-            top 0
-            left 0
-            position absolute
-            z-index 18
+          .map
+            background-color shallow-abyss
+            width 120px
+            height 120px
+            overflow hidden
+            border 1px solid shallow-abyss
+            border-radius 50%
+            position relative
+            z-index 20
+            box-shadow 1px 1px 0 shallow-abyss
+            margin 0 auto
             
+            iframe
+              top 0
+              left 0
+              position absolute
+              z-index 18
+              
+          .name
+            padding 0.3rem 0 0 0
+            
+          .contact
+            padding 0.3rem 0 0 0
+
   #section-aboutus
     background url('http://res.cloudinary.com/df4mulofv/image/upload/c_scale,w_1500/x_280,y_0,w_1180,h_1061,c_crop,e_grayscale,b_rgb:f6f6f6/a_0.25/engagement-smaller_m6kyfq.jpg')
     background-repeat no-repeat
