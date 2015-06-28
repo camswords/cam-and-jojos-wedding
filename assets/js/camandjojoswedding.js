@@ -34,5 +34,9 @@ $(document).ready(function() {
             slideoutMenu.animate({ left: -slideoutMenuWidth }, 250);
             menuToggle.animate({ left: "0px" }, 250);
         }
-    });    
+    });
+    
+    $('.slideout-menu li a').click(function() {
+        $('.menu-toggle').click();
+    });
 });
