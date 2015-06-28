@@ -21,14 +21,18 @@ html
                         a(href="#welcome-section")
                             i.icon.star
                             | Welcome
-                    li(data-menuanchor="cant-come-section")
-                        a(href="#cant-come-section")
-                            i.icon.envelope
-                            | Can't come?
+                    li(data-menuanchor="aboutus-section")
+                        a(href="#aboutus-section")
+                            i.icon.heart
+                            | Our Story
                     li(data-menuanchor="agenda-section")
                         a(href="#agenda-section")
                             i.icon.calendar
-                            | Agenda
+                            | Schedule
+                    li(data-menuanchor="accommodation-section")
+                        a(href="#accommodation-section")
+                            i.icon.home
+                            | Accommodation
                     li(data-menuanchor="kids-section")
                         a(href="#kids-section")
                             i.icon.child
@@ -37,15 +41,12 @@ html
                         a(href="#gifts-section")
                             i.icon.gift
                             | Gifts
-                    li(data-menuanchor="accommodation-section")
-                        a(href="#accommodation-section")
-                            i.icon.home
-                            | Accommodation
-                    li(data-menuanchor="aboutus-section")
-                        a(href="#aboutus-section")
-                            i.icon.heart
-                            | About us
-        
+                    li(data-menuanchor="cant-come-section")
+                        a(href="#cant-come-section")
+                            i.icon.envelope
+                            | Can't come?
+
+
         #header
 
         #footer
@@ -67,37 +68,23 @@ html
                     .supporting-text Chateau de Cazenac, Dordogne France
                     .wedding-date 28th May 2016
 
-            .section#section-cant-come
-                .section-content.cant-come.dynamic-module(data-name="submit-cant-come", data-base-url="#{config.url()}")
+            .section#section-aboutus
+                .section-content.aboutus
                     h1.section-header
-                        i.icon.envelope
-                        | Can't come?
-
-                    .ui.info.icon.message.not-coming-message
-                        i.frown.icon
-                        .content
-                            .header Thank you
-                            p We're sorry you can't come! Thanks for letting us know.
-    
-                    form.ui.form.cant-come-form
-                        .required.field
-                            label Name
-                            .ui.icon.input
-                                input(name="who", type="text")
-                                i.user.icon
-                        .field
-                            label Message
-                            textarea(name="message")
-                        
-                        .ui.error.message.error-messages
-    
-                        .ui.submit.primary.button.submit-cant-come Submit
+                        i.icon.heart
+                        | Our Story
+                    .text-content
+                        p Cam and JoJo met in Bangalore, India in 2006. They had been sent as part of the graduate program for ThoughtWorks; Cam from the Sydney Office, JoJo from London.
+                        p After finding each other and enjoying two months exploring India and getting to know one another, they decided (after Cam consulting his mum) to give long distance a go. The next six months were a blur of early morning skyping sessions, texting, emailing and surprise snail mail. JoJo will always treasure the kangaroo balls bottle opener that Cam so romantically sent her!
+                        p They had no idea when they would next be able to see each other, and eventually JoJo decided to take matters into her own hands and booked a holiday to Sydney. Shortly after booking, TW had an influx of work in the Sydney Office and gave JoJo the option to go over on assignment for three months. This was met with a resounding yes from JoJo, who still headed over for a holiday with Cam.
+                        p Luckily he was still just as handsome as she had thought, but WAAAAY taller than she remembered. They had a great trip and JoJo headed home to pack up her life to head over to Aus for a while. Three and a half years later, they both returned to London, where they met some great friends and made some fabulous memories in Europe.
+                        p All too soon it was time to return to Sydney, and it was here, in a tiny pre-decorated photobooth in Broadway Shopping Centre that Cam decided to propose to JoJo in April of 2013.
     
             .section#section-agenda
                 .section-content.agenda
                     h1.section-header
                         i.icon.calendar
-                        | Agenda
+                        | Schedule
                     
                     .day
                         .day-name Thu 26th
@@ -111,7 +98,15 @@ html
                     .day
                         .day-name Sun 29th
                         .day-activity bbq
-                            
+            
+            .section#section-accommodation
+                .section-content.accommodation
+                    h1.section-header
+                        i.icon.home
+                        | Accommodation
+                    .text-content
+                        p accommodation           
+            
             .section#section-kids
                 .section-content.kids
                     h1.section-header
@@ -137,26 +132,30 @@ html
                         | Gifts
                     .text-content
                         p We know that flights and accommodation can become very expensive and we are so grateful that you are willing to travel to be with us on our special day. We truly believe that your presence at our celebration is a beautiful gift for us to treasure and so, no others are needed, Thank You.
-                        p For those who insist on giving something- Please send or email us a photograph, once you get home, of yourselves enjoying France in all it’s beautiful cheese and wine glory, so that we have a beautiful memento of our special tribe. :)
-
-            .section#section-accommodation
-                .section-content.accommodation
+                        p For those who insist on giving something- Please send or email us a photograph, once you get home, of yourselves enjoying France in all it’s beautiful cheese and wine glory, so that we have a beautiful memento of our special people. :)
+            
+            .section#section-cant-come
+                .section-content.cant-come.dynamic-module(data-name="submit-cant-come", data-base-url="#{config.url()}")
                     h1.section-header
-                        i.icon.home
-                        | Accommodation
-                    .text-content
-                        p accommodation
-
-            .section#section-aboutus
-                .section-content.aboutus
-                    h1.section-header
-                        i.icon.heart
-                        | About us
-                    .text-content
-                        p Cam and JoJo met in Bangalore, India in 2006. They had been sent as part of the graduate program for ThoughtWorks; Cam from the Sydney Office, JoJo from London.
-                        p After finding each other and enjoying two months exploring India and getting to know one another, they decided (after Cam consulting his mum) to give long distance a go. The next six months were a blur of early morning skyping sessions, texting, emailing and surprise snail mail. JoJo will always treasure the kangaroo balls bottle opener that Cam so romantically sent her!
-                        p They had no idea when they would next be able to see each other, and eventually JoJo decided to take matters into her own hands and booked a holiday to Sydney. Shortly after booking, TW had an influx of work in the Sydney Office and gave JoJo the option to go over on assignment for three months. This was met with a resounding yes from JoJo, who still headed over for a holiday with Cam.
-                        p Luckily he was still just as handsome as she had thought, but WAAAAY taller than she remembered. They had a great trip and JoJo headed home to pack up her life to head over to Aus for a while. Three and a half years later, they both returned to London, where they met some great friends and made some fabulous memories in Europe.
-                        p All too soon it was time to return to Sydney, and it was here, in a tiny pre-decorated photobooth in Broadway Shopping Centre that Cam decided to propose to JoJo in April of 2013.
-                          
-
+                        i.icon.envelope
+                        | Can't come?
+            
+                    .ui.info.icon.message.not-coming-message
+                        i.frown.icon
+                        .content
+                            .header Thank you
+                            p We're sorry you can't come! Thanks for letting us know.
+            
+                    form.ui.form.cant-come-form
+                        .required.field
+                            label Name
+                            .ui.icon.input
+                                input(name="who", type="text")
+                                i.user.icon
+                        .field
+                            label Message
+                            textarea(name="message")
+            
+                        .ui.error.message.error-messages
+            
+                        .ui.submit.primary.button.submit-cant-come Submit
