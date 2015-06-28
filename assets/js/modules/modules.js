@@ -3,7 +3,8 @@ var _ = require('lodash');
 var $ = require('jquery');
 
 var registeredModules = {
-    'submit-rsvp': require('./submit-rsvp')
+    'submit-rsvp': require('./submit-rsvp'),
+    'submit-cant-come': require('./submit-cant-come')
 };
 
 module.exports = {
