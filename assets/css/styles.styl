@@ -344,9 +344,13 @@ body
     background-size cover
 
     .gifts
-      width 60%
+      margin 0 1rem
       border-left 1px solid lighten(shallow-abyss, 20)
       border-right 1px solid lighten(shallow-abyss, 20)
+      
+      +device-width(laptop)
+        width 60%
+        margin 0
 
   #section-accommodation
     background-color white
