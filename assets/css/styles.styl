@@ -246,13 +246,17 @@ body
     background-color shallow-abyss
 
     .cant-come
+      margin 0 1rem
       font-size 1.3rem
-      width 60%
       background-color white
       border-top 1px solid lighten(shallow-abyss, 20)
       border-bottom 2px solid lighten(shallow-abyss, 20)
       border-radius 4px
-      
+
+      +device-width(laptop)
+        width 60%
+        margin 0
+        
       .supportive-text
         margin-bottom 2rem
         font-size 1.2rem
@@ -260,6 +264,7 @@ body
 
       textarea
         height 100px
+        font-family Lato,'Helvetica Neue',Arial,Helvetica,sans-serif
         
       label
         color #6e6e6e
