@@ -5,15 +5,19 @@ menu-text-color = #999
   .menu-toggle
     font-size 1.3rem
     position fixed
-    top 5rem
     left 0
+    top 1rem
     padding 0.7rem
     background-color death2
     border-bottom-right-radius 4px
     border-top-right-radius 4px
-    z-index 10
+    z-index 30
     color menu-text-color
     cursor pointer
+
+    +device-width(laptop)
+      top 5rem
+
 
     &:hover
       background #000
