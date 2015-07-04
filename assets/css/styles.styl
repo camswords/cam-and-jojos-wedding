@@ -369,7 +369,7 @@ body
       ul.accommodation-options
         list-style-type none
         padding 0
-        width 70%
+        width 85%
         margin 0 auto
 
         +device-width(laptop)
@@ -418,6 +418,11 @@ body
             width 40px
             height 40px
             
+            +device-width(laptop)
+              width 120px
+              height 120px
+              position static
+              
             .map
               background-color shallow-abyss
               width 40px
@@ -442,9 +447,9 @@ body
                 width 40px
                 height 40px
               
-              +device-width(laptop)
-                width 120px
-                height 120px
+                +device-width(laptop)
+                  width 120px
+                  height 120px
               
           .name
             padding 0.3rem 0 0 0
