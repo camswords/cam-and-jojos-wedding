@@ -348,59 +348,99 @@ body
     background-color white
     
     .accommodation
-      width 90%
-      padding 2rem 1rem 1rem 1rem
+      border none
+      
+      +device-width(laptop)
+        width 90%
+        padding 2rem 1rem 1rem 1rem
 
       ul.accommodation-options
         list-style-type none
+        padding 0
+        width 70%
+        margin 0 auto
+
+        +device-width(laptop)
+          width 100% 
+          margin 0
         
         li
-          padding 0.7rem
-          width 20%
+          padding 0.1rem 0 0 50px
+          position relative
           display inline-block
           text-align center
 
+          +device-width(laptop)
+            width 20%
+            padding 0.7rem
+            
           .more
             background-color #e0e0e0
-            width 120px
-            height 120px
+            width 40px
+            height 40px
             border 1px solid shallow-abyss
             border-radius 50%
             position relative
             box-shadow 1px 1px 0 shallow-abyss
             margin 0 auto
             
+            +device-width(laptop)
+              width 120px
+              height 120px
+              
             i
               position absolute
               left 50%
               top 50%
               transform translate(-50%, -50%)
-              font-size 3rem
+              font-size 1rem
               color shallow-abyss
+              
+              +device-width(laptop)
+                font-size 3rem
 
-          .map
-            background-color shallow-abyss
-            width 120px
-            height 120px
-            overflow hidden
-            border 1px solid shallow-abyss
-            border-radius 50%
-            position relative
-            z-index 20
-            box-shadow 1px 1px 0 shallow-abyss
-            margin 0 auto
+          .location
+            position absolute
+            left 0
+            top 0.3rem
+            width 40px
+            height 40px
             
-            iframe
-              top 0
-              left 0
-              position absolute
-              z-index 18
+            .map
+              background-color shallow-abyss
+              width 40px
+              height 40px
+              overflow hidden
+              border 1px solid shallow-abyss
+              border-radius 50%
+              position relative
+              z-index 20
+              box-shadow 1px 1px 0 shallow-abyss
+              margin 0 auto
+  
+              +device-width(laptop)
+                width 120px
+                height 120px
+  
+              iframe    
+                top 0
+                left 0
+                position absolute
+                z-index 18
+                width 40px
+                height 40px
+              
+              +device-width(laptop)
+                width 120px
+                height 120px
               
           .name
             padding 0.3rem 0 0 0
+            text-align left
             
           .contact
             padding 0.3rem 0 0 0
+            text-align left
 
   #section-aboutus
     background url('http://res.cloudinary.com/df4mulofv/image/upload/c_scale,w_1500/x_280,y_0,w_1180,h_1061,c_crop,e_grayscale,b_rgb:f6f6f6/a_0.25/engagement-smaller_m6kyfq.jpg')
