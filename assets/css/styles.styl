@@ -103,7 +103,7 @@ body
   .section
     position relative
     background-color shallow-abyss
-    padding-top 2rem
+    padding-top 1rem
     
     +device-width(laptop)
       padding-top 3rem
@@ -126,7 +126,7 @@ body
 
 
       .text-content
-        font-size 1rem
+        font-size 0.8rem
         color #6e6e6e
 
         +device-width(laptop)
@@ -249,7 +249,7 @@ body
 
     .cant-come
       margin 0 1rem
-      font-size 1.3rem
+      font-size 1rem
       background-color white
       border-top 1px solid lighten(shallow-abyss, 20)
       border-bottom 2px solid lighten(shallow-abyss, 20)
@@ -258,11 +258,17 @@ body
       +device-width(laptop)
         width 60%
         margin 0
-        
+        font-size 1.3rem
+
+
       .supportive-text
         margin-bottom 2rem
-        font-size 1.2rem
+        font-size 1rem
         color #6e6e6e
+        
+        +device-width(laptop)
+          font-size 1.2rem
+
 
       textarea
         height 100px
@@ -286,16 +292,19 @@ body
     .agenda
       text-align center
       padding 1rem 1rem 2rem 1rem
-      font-size 1.2rem
+      font-size 1rem
       width 100%
       
       +device-width(laptop)
         font-size 1.5rem
 
       .supportive-text
-        margin-bottom 2rem
-        font-size 1.2rem
+        margin-bottom 1rem
+        font-size 1rem
         color #6e6e6e
+
+        +device-width(laptop)
+          margin-bottom 2rem
 
       .day
         position relative
@@ -325,7 +334,11 @@ body
           right 10px
           bottom 5px
           color #3e3e3e
-          font-size 1.2rem
+          font-size 1rem
+          
+          +device-width(laptop)
+            font-size 1.2rem
+
         .day-activity
           text-align center
           left 50%
@@ -358,6 +371,12 @@ body
       +device-width(laptop)
         width 60%
         margin 0
+
+      .text-content
+        font-size 1rem
+
+      +device-width(laptop)
+        font-size 1.2rem
 
   #section-accommodation
     background-color white
