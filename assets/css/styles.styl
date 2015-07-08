@@ -389,24 +389,30 @@ body
         padding 2rem 1rem 1rem 1rem
 
       ul.accommodation-options
-        list-style-type none
-        padding 0
-        width 85%
+        list-style disc
+        padding 0 0 0 5rem
         margin 0 auto
+        font-size 0.8rem
 
         +device-width(laptop)
+          padding 0 0 0 3rem
+          font-size 1rem
+          width 85%
           width 100% 
           margin 0
+          list-style-type none
         
         li
-          padding 0.1rem 0 0 50px
           position relative
-          display inline-block
+          display list-item
           text-align center
+          padding 0.3rem 0 0 0
 
           +device-width(laptop)
+            padding 0.1rem 0 0 50px
             width 20%
             padding 0.7rem
+            display inline-block
             
           .more
             background-color #e0e0e0
@@ -434,16 +440,13 @@ body
                 font-size 3rem
 
           .location
-            position absolute
-            left 0
-            top 0.3rem
-            width 40px
-            height 40px
+            display none
             
             +device-width(laptop)
               width 120px
               height 120px
               position static
+              display inline-block
               
             .map
               background-color shallow-abyss
@@ -474,12 +477,18 @@ body
                   height 120px
               
           .name
-            padding 0.3rem 0 0 0
+            padding 0
             text-align left
-            
+
+            +device-width(laptop)
+              padding 0.3rem 0 0 0
+
           .contact
-            padding 0.3rem 0 0 0
+            padding 0
             text-align left
+
+            +device-width(laptop)
+              padding 0.3rem 0 0 0
 
   #section-aboutus
     background url('http://res.cloudinary.com/df4mulofv/image/upload/c_scale,w_1500/x_280,y_0,w_1180,h_1061,c_crop,e_grayscale,b_rgb:f6f6f6/a_0.25/engagement-smaller_m6kyfq.jpg')
