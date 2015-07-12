@@ -6,5 +6,6 @@ module.exports = {
     mongodb: {
         url: function() { return 'mongodb://localhost/camandjojoswedding'; }
     },
-    minifyJavascript: function() { return false; }
+    minifyJavascript: function() { return false; },
+    googleAnalyticsApiKey: function() { return null; }
 };

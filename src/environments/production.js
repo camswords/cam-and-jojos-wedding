@@ -6,5 +6,6 @@ module.exports = {
     mongodb: {
         url: function() { return process.env.MONGODB_URL; }
     },
-    minifyJavascript: function() { return true; }
+    minifyJavascript: function() { return true; },
+    googleAnalyticsApiKey: function() { return process.env.GOOGLE_ANALTICS_TRACKING_ID; }
 };
