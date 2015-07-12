@@ -15,7 +15,8 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         anchors: ['welcome-section', 'aboutus-section', 'agenda-section', 'accommodation-section', 'kids-section', 'gifts-section', 'cant-come-section'],
         menu: '.slideout-menu-items',
-        animateAnchor: false
+        animateAnchor: false,
+        responsiveWidth: 900
     });
 
     $('.menu-toggle').on('click', function(event) {
