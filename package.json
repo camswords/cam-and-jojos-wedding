@@ -9,7 +9,6 @@
     "extend": "*",
     "fullpage.js": "*",
     "gulp": "*",
-    "gulp-browserify": "*",
     "gulp-concat": "*",
     "gulp-cond": "*",
     "gulp-nodemon": "*",
@@ -25,7 +24,10 @@
     "require-dir": "*",
     "streamqueue": "*",
     "validate.js": "*",
-    "body-parser": "*"
+    "body-parser": "*",
+    "browserify": "*",
+    "vinyl-source-stream": "*",
+    "vinyl-buffer": "*"
   },
   "scripts": {
     "start": "node src/server.js",
