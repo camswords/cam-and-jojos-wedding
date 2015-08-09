@@ -115,14 +115,15 @@ body
       border-top 1px solid lighten(shallow-abyss, 20)
       border-bottom 2px solid lighten(shallow-abyss, 20)
       border-radius 4px
+      position absolute
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
+      -webkit-transform translate(-50%, -50%)
+      width 90%
       
       +device-width(laptop)
-        left 50%
-        top 50%
-        transform translate(-50%, -50%)
-        -webkit-transform translate(-50%, -50%)
-        width 60%
-        position absolute
+        width 60%       
         padding 2rem
 
 
@@ -252,7 +253,6 @@ body
     background-color shallow-abyss
 
     .cant-come
-      margin 0 1rem
       font-size 1rem
       background-color white
       border-top 1px solid lighten(shallow-abyss, 20)
@@ -368,8 +368,6 @@ body
 
   #section-kids
     .kids
-      margin 0 1rem
-      
       +device-width(laptop)
         width 60%
         margin 0
@@ -383,7 +381,6 @@ body
     background-size cover
 
     .gifts
-      margin 0 1rem
       border-left 1px solid lighten(shallow-abyss, 20)
       border-right 1px solid lighten(shallow-abyss, 20)
       
@@ -520,7 +517,6 @@ body
     .aboutus
       border-left 1px solid lighten(shallow-abyss, 20)
       border-right 1px solid lighten(shallow-abyss, 20)
-      margin 0 1rem
 
       +device-width(laptop)
         margin 0 auto
