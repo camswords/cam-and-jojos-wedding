@@ -16,7 +16,7 @@ $(document).ready(function() {
         anchors: ['welcome-section', 'aboutus-section', 'agenda-section', 'getting-there-section', 'accommodation-section', 'kids-section', 'gifts-section', 'cant-come-section'],
         menu: '.slideout-menu-items',
         animateAnchor: false,
-        responsiveWidth: 5000
+        autoScrolling: false
     });
 
     $('.menu-toggle').on('click', function(event) {
