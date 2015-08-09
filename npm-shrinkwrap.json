@@ -1317,6 +1317,11 @@
       "from": "extend@*",
       "resolved": "https://registry.npmjs.org/extend/-/extend-3.0.0.tgz"
     },
+    "fullpage.js": {
+      "version": "2.6.7",
+      "from": "fullpage.js@*",
+      "resolved": "https://registry.npmjs.org/fullpage.js/-/fullpage.js-2.6.7.tgz"
+    },
     "gulp": {
       "version": "3.9.0",
       "from": "gulp@*",
@@ -5750,25 +5755,6 @@
                   "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz"
                 }
               }
-            }
-          }
-        }
-      }
-    },
-    "page": {
-      "version": "1.6.3",
-      "from": "page@*",
-      "resolved": "https://registry.npmjs.org/page/-/page-1.6.3.tgz",
-      "dependencies": {
-        "path-to-regexp": {
-          "version": "1.0.3",
-          "from": "path-to-regexp@>=1.0.1 <1.1.0",
-          "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.0.3.tgz",
-          "dependencies": {
-            "isarray": {
-              "version": "0.0.1",
-              "from": "isarray@0.0.1",
-              "resolved": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz"
             }
           }
         }

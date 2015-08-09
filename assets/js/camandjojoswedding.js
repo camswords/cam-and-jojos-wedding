@@ -1,6 +1,6 @@
 
 var $ = require('jquery');
-var page = require('page');
+var fullPage = require('fullpage.js');
 var modules = require('./modules/modules');
 
 // the follow are only to assist debugging in a browser window
@@ -9,15 +9,16 @@ window.$ = $;
 // the following is for semantic-ui
 window.jQuery = $;
 
-var scrollTo = function($element) {
-    return function() {
-        $('html, body').animate({ scrollTop: $element.offset().top }, 1000);
-    };
-};
-
 $(document).ready(function() {
     modules.execute($('.dynamic-module'));
     
+    $('#fullpage').fullpage({
+        anchors: ['welcome-section', 'aboutus-section', 'agenda-section', 'getting-there-section', 'accommodation-section', 'kids-section', 'gifts-section', 'cant-come-section'],
+        menu: '.slideout-menu-items',
+        animateAnchor: false,
+        responsiveWidth: 5000
+    });
+
     $('.menu-toggle').on('click', function(event) {
         event.preventDefault();
         
@@ -40,15 +41,4 @@ $(document).ready(function() {
     $('.slideout-menu li a').click(function() {
         $('.menu-toggle').click();
     });
-
-    page.base('/section');
-    page('/welcome', scrollTo($('#section-welcome')));
-    page('/about-us', scrollTo($('#section-aboutus')));
-    page('/agenda', scrollTo($('#section-agenda')));
-    page('/getting-there', scrollTo($('#section-getting-there')));
-    page('/accommodation', scrollTo($('#section-accommodation')));
-    page('/kids', scrollTo($('#section-kids')));
-    page('/gifts', scrollTo($('#section-gifts')));
-    page('/cant-come', scrollTo($('#section-cant-come')));
-    page({ hashbang: true });
 });

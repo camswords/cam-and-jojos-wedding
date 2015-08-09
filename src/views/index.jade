@@ -8,7 +8,7 @@ html
         script(src='#{path.toJavascript()}', async)
 
     body
-
+        
         #menu
             .menu-toggle
                 i.icon.bars
@@ -17,36 +17,36 @@ html
             .slideout-menu
 
                 ul.slideout-menu-items
-                    li
-                        a(href="./welcome")
+                    li(data-menuanchor="welcome-section")
+                        a(href="#welcome-section")
                             i.icon.star
                             | Welcome
-                    li
-                        a(href="./about-us")
+                    li(data-menuanchor="aboutus-section")
+                        a(href="#aboutus-section")
                             i.icon.heart
                             | Our Story
-                    li
-                        a(href="./agenda")
+                    li(data-menuanchor="agenda-section")
+                        a(href="#agenda-section")
                             i.icon.calendar
                             | Schedule
-                    li
-                        a(href="./getting-there")
+                    li(data-menuanchor="getting-there-section")
+                        a(href="#getting-there-section")
                             i.icon.car
                             | Getting there
-                    li
-                        a(href="./accommodation")
+                    li(data-menuanchor="accommodation-section")
+                        a(href="#accommodation-section")
                             i.icon.home
                             | Accommodation
-                    li
-                        a(href="./kids")
+                    li(data-menuanchor="kids-section")
+                        a(href="#kids-section")
                             i.icon.child
                             | Kids
-                    li
-                        a(href="./gifts")
+                    li(data-menuanchor="gifts-section")
+                        a(href="#gifts-section")
                             i.icon.gift
                             | Gifts
-                    li
-                        a(href="./cant-come")
+                    li(data-menuanchor="cant-come-section")
+                        a(href="#cant-come-section")
                             i.icon.envelope
                             | Can't Come?
 
