@@ -17,7 +17,7 @@ database.connected().then(function() {
     webServer.use(require('./controllers/request-helpers'));
 
     webServer.use('/', routes(express.Router()));
-    webServer.use(function(request, response) { response.status(404).send('Not Found'); });
+    webServer.use(require('./controllers/home'));
 
     webServer.listen(config.port(), function() {
         console.log('started cam-and-jojos-wedding on port ' + config.port() + '. Using configuration for ' + config.environment() + '.');

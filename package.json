@@ -7,7 +7,6 @@
     "bluebird": "*",
     "express": "*",
     "extend": "*",
-    "fullpage.js": "*",
     "gulp": "*",
     "gulp-concat": "*",
     "gulp-cond": "*",
@@ -27,7 +26,8 @@
     "body-parser": "*",
     "browserify": "*",
     "vinyl-source-stream": "*",
-    "vinyl-buffer": "*"
+    "vinyl-buffer": "*",
+    "page": "*"
   },
   "scripts": {
     "start": "node src/server.js",
