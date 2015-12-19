@@ -11,17 +11,10 @@ window.jQuery = $;
 
 $(document).ready(function() {
     modules.execute($('.dynamic-module'));
-    
-    $('#fullpage').fullpage({
-        anchors: ['welcome-section', 'aboutus-section', 'agenda-section', 'getting-there-section', 'accommodation-section', 'kids-section', 'gifts-section', 'cant-come-section'],
-        menu: '.slideout-menu-items',
-        animateAnchor: false,
-        autoScrolling: false
-    });
 
     $('.menu-toggle').on('click', function(event) {
         event.preventDefault();
-        
+
         var menuToggle = $('.menu-toggle');
         var slideoutMenu = $('.slideout-menu');
         var slideoutMenuWidth = $('.slideout-menu').width();
@@ -37,7 +30,7 @@ $(document).ready(function() {
             menuToggle.animate({ left: "0px" }, 250);
         }
     });
-    
+
     $('.slideout-menu li a').click(function() {
         $('.menu-toggle').click();
     });
