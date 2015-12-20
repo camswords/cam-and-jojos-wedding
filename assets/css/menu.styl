@@ -1,12 +1,12 @@
 menu-text-color = #999
 
 #menu
-  
+
   .menu-toggle
     font-size 1.3rem
     position fixed
     left 0
-    top 0.2rem
+    top 5rem
     padding 0.7rem
     background-color death2
     border-bottom-right-radius 4px
@@ -14,10 +14,7 @@ menu-text-color = #999
     z-index 30
     color menu-text-color
     cursor pointer
-
-    +device-width(laptop)
-      top 5rem
-
+    
     .menu-text
       display none
 
@@ -27,7 +24,7 @@ menu-text-color = #999
     &:hover
       background #000
       color glowing-eiffel-tower
-      
+
     &.open
       i.icon.bars
         &:before
@@ -41,7 +38,7 @@ menu-text-color = #999
     height 100%
     background #333
     z-index 100
-    
+
     h3
       position relative
       padding 12px 10px
@@ -49,7 +46,7 @@ menu-text-color = #999
       font-size 1.2em
       font-weight 400
       border-bottom 4px solid #222
-    
+
     .slideout-menu-toggle
       position absolute
       top 12px
@@ -63,28 +60,28 @@ menu-text-color = #999
       color #999
       text-decoration none
       vertical-align top
-      
+
       &:hover
         color #fff
-        
+
     ul.slideout-menu-items
       padding 0
       list-style none
       font-weight 300
       border-top 1px solid #151515
       border-bottom 1px solid #454545
-      
+
       li
         border-top 1px solid #454545
         border-bottom 1px solid #151515
-        
+
         a
           position relative
           display block
           padding 10px
           color menu-text-color
           text-decoration none
-          
+
           &:hover
             background #000
             color glowing-eiffel-tower
@@ -92,4 +89,3 @@ menu-text-color = #999
             position absolute
             top 15px
             right 10px
-  
